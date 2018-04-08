@@ -1,0 +1,135 @@
+body {
+	margin: 0px;
+	background-color: #FFFFF1;
+	background-position: center;
+}
+
+#intro {
+	display:none;
+}
+
+#hello, #intro {
+	margin-top: 20px;
+	font-family: "Shrikhand", cursive;
+	font-size: 5em;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.button {
+	font-family: "Berkshire Swash", cursive;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 3em;
+	padding: 100px;
+	letter-spacing: 3px;
+	background-size: 100%;
+	height: 50px;
+	width: 50px;
+	transition: 0.5s;
+}
+
+.circle-button {
+	border-radius: 50%;
+}
+
+.square-button {
+	border-radius: 80%;
+}
+
+.button-container {
+	position: absolute;
+	margin-top: 250px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	justify-content: start;
+	align-items: start;
+	grid-template-columns: repeat(3, 225px);
+	grid-template-rows: repeat(2, 225px);
+	grid-gap: 50px;
+	grid-template-areas:
+		"about swimming fitness hobbies"
+		"resume teaching quora spotify";
+}
+
+#about {
+	grid-area: about;
+	background:url("../img/me.jpg") -20px;
+	background-size: 120%;
+}
+
+#swimming {
+	grid-area: swimming;
+	background:url("../img/water.jpg") -35px 0px;
+	background-size: 150%;
+}
+
+#fitness {
+	grid-area: fitness;
+	background:url("../img/pete.jpg") -30px;
+	background-size: 130%;
+}
+
+#hobbies {
+	grid-area: hobbies;
+	background:url("../img/himym.jpg") -25px;
+	background-size: 130% 101%;
+}
+
+#resume {
+	grid-area: resume;
+	background:url("../img/handshake.jpg") -60px;
+	background-size: 220%;
+}
+
+#teaching {
+	grid-area: teaching;
+	background:url("../img/teaching.jpg");
+	background-size: 135%;
+}
+
+#quora {
+	grid-area: quora;
+	background:url("../img/quora.jpg") -25px;
+	background-size: 140%;
+}
+
+#spotify {
+	grid-area: spotify;
+	background:url("../img/spotify.jpeg") 10px;
+	background-size: 120%;
+}
+
+.general-popup {
+	alignTop:false;
+	closeBtnInside:true;
+	font-family: "Vollkorn", serif;
+	font-size: 1.25em;
+  background-color: #FFFFF1;
+	padding: 15px;
+  margin:auto;
+  width:auto;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+      padding: 100px;
+			font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .button {
+			padding: 50px;
+			font-size: 1em;
+    }
+		.button-container {
+			grid-gap: 0px;
+		}
+}
