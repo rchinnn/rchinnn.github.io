@@ -30,7 +30,7 @@ $(document).ready(function() {
   });
 
   //jQuery Function #5
-  $(".button").magnificPopup({
+  $(".popup-button").magnificPopup({
     type:"inline",
     midClick: true
   });
