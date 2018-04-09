@@ -17,6 +17,10 @@ body {
 	font-weight: 300;
 }
 
+#hello:hover{
+	cursor:pointer;
+}
+
 .button {
 	font-family: "Berkshire Swash", cursive;
 	text-decoration: none;

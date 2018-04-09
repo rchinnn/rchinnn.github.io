@@ -24,9 +24,9 @@ $(document).ready(function() {
   });
 
   //jQuery Function #4
-  $("#hello").mouseover(function() {
+  $("#hello").hover(function() {
     $("#hello").hide("scale",{percent: 20}, 1000);
-    $("#intro").show("fold", 2200);
+    $("#intro").show("fold", 2000);
   });
 
   //jQuery Function #5
