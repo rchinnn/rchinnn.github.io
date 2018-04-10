@@ -1,3 +1,26 @@
+body {
+	margin: 0px;
+	background-color: #FFFFF1;
+	background-position: center;
+}
+
+#intro {
+	display:none;
+}
+
+#hello, #intro {
+	margin-top: 20px;
+	font-family: "Shrikhand", cursive;
+	font-size: 5em;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+#hello:hover{
+	cursor:pointer;
+}
+
 .rad, .line, .box {
   transition: all 0.25s ease-in-out;
 }
@@ -50,29 +73,6 @@
 .box.open {
   height: 50px;
   opacity: 1;
-}
-
-body {
-	margin: 0px;
-	background-color: #FFFFF1;
-	background-position: center;
-}
-
-#intro {
-	display:none;
-}
-
-#hello, #intro {
-	margin-top: 20px;
-	font-family: "Shrikhand", cursive;
-	font-size: 5em;
-	text-align: center;
-	letter-spacing: 3px;
-	font-weight: 300;
-}
-
-#hello:hover{
-	cursor:pointer;
 }
 
 .button {
