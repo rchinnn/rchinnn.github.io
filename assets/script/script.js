@@ -34,4 +34,9 @@ $(document).ready(function() {
     type:"inline",
     midClick: true
   });
+
+  // jQuery Function #6 (source: Dainius from https://blog.trackduck.com/2015/06/10/15-impressive-pop-animation-effects-codepen/)
+  $(".rad").on("mouseenter mouseleave", function () {
+    $(".box, .line").toggleClass("open");
+  });
 });
