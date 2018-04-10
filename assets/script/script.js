@@ -29,7 +29,7 @@ $(document).ready(function() {
     $("#intro").show("fold", 2000);
   });
 
-  //jQuery Function #5
+  // jQuery Function #5
   $(".popup-button").magnificPopup({
     type:"inline",
     midClick: true
