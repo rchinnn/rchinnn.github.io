@@ -23,13 +23,18 @@ $(document).ready(function() {
     $(this).addClass("square-button");
   });
 
-  //jQuery Function #4
+  // jQuery Function #4
   $("#hello").mouseenter(function() {
     $("#hello").hide("fold", 2000);
     $("#intro").show("fold", 2000);
+      $("#intro").typeIt({
+        startDelay: 1100,
+        speed: 150,
+        lifeLike: false
+      });
   });
 
-  // jQuery Function #5
+  // jQuery Function #5 (MagnificPopup)
   $(".popup-button").magnificPopup({
     type:"inline",
     midClick: true
@@ -38,5 +43,11 @@ $(document).ready(function() {
   // jQuery Function #6 (source: Dainius from https://blog.trackduck.com/2015/06/10/15-impressive-pop-animation-effects-codepen/)
   $(".rad").on("mouseenter mouseleave", function () {
     $(".box, .line").toggleClass("open");
+  });
+
+  // jQuery Function #7 (TypeIt)
+  $("#hello").typeIt({
+    speed: 75,
+    lifeLike: false
   });
 });
