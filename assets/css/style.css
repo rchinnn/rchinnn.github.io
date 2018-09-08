@@ -112,7 +112,7 @@ body {
 	grid-gap: 50px;
 	grid-template-areas:
 		"about swimming fitness hobbies"
-		"resume teaching quora spotify";
+		"resume career quora spotify";
 }
 
 #about {
@@ -145,8 +145,8 @@ body {
 	background-size: 220%;
 }
 
-#teaching {
-	grid-area: teaching;
+#career {
+	grid-area: career;
 	background:url("../img/teaching.jpg");
 	background-size: 135%;
 }
